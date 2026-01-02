@@ -212,8 +212,10 @@ const ChatModal = ({ onClose }) => {
 
   return (
     <div
-      className="fixed bottom-6 right-6 w-full max-w-sm bg-white..."
-style={{ height: '550px', maxHeight: 'calc(100vh - 80px)' }}
+      className="fixed bottom-6 right-6 w-full max-w-sm bg-white rounded-2xl shadow-2xl flex flex-col z-50 overflow-hidden animate-slideUp"
+      role="dialog"
+      aria-label="Chat window"
+      style={{ height: '500px', maxHeight: 'calc(100vh - 120px)' }}
     >
       <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-4 flex items-center justify-between rounded-t-2xl">
         <div className="flex items-center gap-3">
