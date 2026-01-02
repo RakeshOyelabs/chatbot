@@ -212,10 +212,10 @@ const ChatModal = ({ onClose }) => {
 
   return (
     <div
-      className="fixed bottom-6 right-6 w-full max-w-sm h-[500px] bg-white rounded-2xl shadow-2xl flex flex-col z-50 overflow-hidden animate-slideUp"
+      className="fixed bottom-6 right-6 w-full max-w-sm bg-white rounded-2xl shadow-2xl flex flex-col z-50 overflow-hidden animate-slideUp"
       role="dialog"
       aria-label="Chat window"
-      style={{ maxHeight: 'calc(100vh - 100px)' }}
+      style={{ height: '550px', maxHeight: 'calc(100vh - 80px)' }}
     >
       <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-4 flex items-center justify-between rounded-t-2xl">
         <div className="flex items-center gap-3">
@@ -310,7 +310,7 @@ const ChatModal = ({ onClose }) => {
         <div ref={messagesEndRef} />
       </div>
 
-      <div className="p-4 bg-white border-t border-gray-200">
+      <div className="px-4 py-3 bg-white border-t border-gray-200 flex-shrink-0">
         <div className="flex items-center gap-2 bg-gray-50 rounded-full px-3 py-2 relative">
           <input
             ref={fileInputRef}
@@ -373,7 +373,7 @@ const ChatModal = ({ onClose }) => {
           </button>
         </div>
 
-        <div className="mt-2 flex items-center justify-center">
+        <div className="mt-1.5 flex items-center justify-center">
           <p className="text-xs text-gray-400">
             Powered by AI • Press Enter to send
           </p>
